@@ -1,0 +1,11 @@
+.bg_box_parent {
+    width: 100%;
+    height: 500px;
+    background-image:
+        linear-gradient(to right, transparent 50%, rgb(184, 162, 162) 50%),
+        linear-gradient(to bottom, transparent 50%, rgb(221, 50, 50) 50%);
+    background-size: 20px 20px;
+    /* Size of each box */
+    background-position: 0 0, 0 0;
+    background-repeat: repeat;
+}

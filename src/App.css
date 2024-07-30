@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Astronomus';
+    src: url('./fonts/Astronomus.ttf');
+}
+
+
+/*background-origin: border-box;*/
+/*background-clip: border-box;*/
+/* p {
+    background-image: linear-gradient(to right, #ff69b4, #ff99cc);
+    border: 2px solid transparent;
+    border-radius: 10px;
+  } */
+
+
+.custom_heading_1 {
+    font-family: 'Astronomus';
+
+}
+
+
+/* App.css */
+.gradient-text {
+    font-size: 48px;
+    font-weight: bold;
+    /* background: -webkit-linear-gradient(#ff7e5f, #feb47b); */
+    background: linear-gradient(180deg, rgba(215, 179, 255, 0.6) 15.96%, rgba(215, 178, 255, 0) 71.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
