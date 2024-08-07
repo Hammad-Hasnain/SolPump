@@ -1,18 +1,21 @@
 import './App.css'
 import './index.css'
 import Navbar from './Components/Navbar'
-import Section_1 from './Components/Section_1'
-import BgBoxes from './Components/BgBoxes'
-// import Group427Line from './Components/Group427Line'
-// import PotraitGradient from './Components/PotraitGradient'
+import OnChainSec from './Components/OnChainSec'
+import BridgingSec from './Components/BridgingSec'
+import UnlockingSec from './Components/UnlockingSec'
+import FooterSec from './Components/FooterSec'
+import UnderstandingSec from './Components/UnderstandingSec'
 
 const App = () => <div className='bg-black'>
-  {/* <BgBoxes /> */}
-
   <Navbar />
-  {/* <div className='px-10' style={{ padding: '0 40px', }}> */}
-  <div className='px-10' >
-    <Section_1 />
+  <div className='px-0 md:px-10 text-white' >
+    {/* okay💫 */}
+    <OnChainSec />
+    <BridgingSec />
+    <UnlockingSec />
+    <UnderstandingSec />
+    <FooterSec />
   </div>
 </div>
 

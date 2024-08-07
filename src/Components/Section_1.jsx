@@ -11,10 +11,10 @@ import Box_shadow from './Box_shadow'
 import LightningComp from './LightningComp'
 import FooterGradient from './FooterGradient'
 import Scanner from './Scanner'
+import OnChainSec from './OnChainSec'
 
 
 const Section_1 = () => {
-    const [activeButton, setActiveButton] = useState('inception');
     const [activeButtonArr, setActiveButtonArr] = useState([
         { id: 'inception', content: 'Lorem Ipsum is simply dummy text of the' },
         { id: 'establishment', content: 'Lorem Ipsum is simply dummy text of the' },
@@ -25,137 +25,11 @@ const Section_1 = () => {
 
 
 
-    const handleButtonClick = (buttonName) => {
-        setActiveButton(buttonName);
-    };
 
 
 
     return (
         <div style={{ color: 'white', }}>
-            <div className='onchain_parent' style={{ position: 'relative', }}>
-                <div className='py-[90px]' >
-                    <div style={{ paddingBottom: '160px' }}>
-                        <div >
-                            {/* <button className='game_btn'>game</button> */}
-                            <button className="px-[36px] py-[24px] mb-[16px] rounded-[44px] bg-white text-[#120D16] text-[32px] font-bold">game</button>
-                        </div>
-                        {/*  */}
-                        <div>
-                            {/* <svg width="0" height="0">
-                                <defs>
-                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" style={{ stopColor: "#ff7e5f", stopOpacity: 1 }} />
-                                        <stop offset="100%" style={{ stopColor: "#feb47b", stopOpacity: 1 }} />
-                                    </linearGradient>
-                                </defs>
-                            </svg> */}
-                            <p className=' onchain_title ' >THE ONCHAIN</p>
-                        </div>
-                        {/*  */}
-                        <div>
-                            {/* <svg width="0" height="0">
-                                <defs>
-                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" style={{ stopColor: "#ff7e5f", stopOpacity: 1 }} />
-                                        <stop offset="100%" style={{ stopColor: "#feb47b", stopOpacity: 1 }} />
-                                    </linearGradient>
-                                </defs>
-                            </svg> */}
-                            <p className='solana_title'>SOLANA PREDICTING</p>
-                        </div>
-
-                    </div>
-                    {/* <div className='ellipse_3625'>
-
-                </div> */}
-                    {/* <div style={{ display: 'flex', justifyContent: 'space-around', position: 'relative', zIndex: '2' }}> */}
-                    <div className='flex justify-around relative z-20'>
-                        {/* <p className='dummy_content_p'> */}
-                        <p className='font-sora text-base font-normal leading-5 text-white max-w-[380px]'>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
-
-                        {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 40 }}> */}
-                        <div className='flex justify-center items-center gap-10'>
-                            {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 20 }}> */}
-                            <div className='flex justify-center items-center gap-5'>
-                                <p className='text-[40px]'>DEX tools
-                                </p>
-                                <Arrow />
-                            </div>
-                            <div className='flex justify-center items-center gap-5'>
-                                <p className='text-[40px]'>RAYDIUM </p>
-                                <Arrow />
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div className="absolute bottom-0 left-1/2 opacity-50 h-[600px] z-[1] overflow-hidden transform -translate-x-1/2">
-                    <Box_shadow />
-                </div>
-                <div className='absolute bottom-0 left-[30%]' >
-                    <LightningComp />
-                </div>
-                <div className='absolute bottom-[20%] left-[20%]'>
-                    <LightningComp />
-                </div>
-                <div className='absolute bottom-[27%] left-[35%]'>
-                    <LightningComp />
-                </div>
-                <div className='absolute bottom-[20%] left-1/2'>
-                    <LightningComp />
-                </div>
-                <div className='absolute bottom-[30%] left-[60%]'>
-                    <LightningComp />
-                </div>
-                <div className='absolute bottom-[10%] left-[70%]'>
-                    <LightningComp />
-                </div>
-            </div>
-
-            <div >
-                <div className="w-full h-[1170px]">
-                    <p className="text-[88px] font-normal leading-[114.4px] text-center">
-                        Bridging digital worlds the power of connection</p>
-                    <p className="w-[856px] h-[42px] font-sora text-[16px] font-normal leading-[20.8px] text-center m-auto">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
-
-                    <div className="flex justify-center items-center w-full h-[750px] rounded-[422.79px] border border-[#80808038] relative">
-                        <CircleGradient style={{ position: 'absolute', top: '12%', left: '7%' }} />
-                        <CircleGradient style={{ position: 'absolute', top: '80%', left: '5%' }} />
-                        <div className="border border-[#80808038] w-4/5 h-4/5 rounded-[422.79px] flex justify-center items-center relative" >
-                            <CircleGradient style={{ position: 'absolute', top: '12%', left: '7%' }} />
-                            <div className="border border-[#80808038] w-4/5 h-4/5 rounded-[422.79px] flex justify-center items-center relative">
-                                <CircleGradient style={{ position: 'absolute', top: '75%', left: '3%' }} />
-                                <div className="border border-[#80808038] w-4/5 h-4/5 rounded-[422.79px] flex justify-center items-center relative">
-                                    <div className="border border-[#80808038] w-4/5 h-4/5 rounded-[422.79px] flex justify-center items-center relative">
-                                        <CircleGradient style={{ position: 'absolute', top: '0%', left: '50%' }} />
-                                        <div className="border border-[#80808038] w-4/5 h-4/5 rounded-[422.79px] flex justify-center items-center relative">
-                                            <CircleGradient style={{ position: 'absolute', top: '12%', left: '3%' }} />
-                                            <CircleGradient style={{ position: 'absolute', top: '95%', left: '45%' }} />
-                                            <div className="border border-[#80808038] w-4/5 h-4/5 rounded-[422.79px] flex justify-center items-center relative">
-                                                <div className="border border-[#80808038] w-4/5 h-4/5 rounded-[422.79px] flex justify-center items-center relative">
-                                                    <div className="w-full h-full rounded-[422.79px] bg-gradient-to-b from-[#2B1645] to-[#9442BA] flex justify-center items-center" >
-                                                        <img src={rotated_arrow} alt="arrow_img" width={'30%'} />
-                                                    </div>
-                                                    <div className='b_p_btn_ellipse' style={{ position: 'absolute', top: '28%', left: '-10%', opacity: '0.5' }}></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <CircleGradient style={{ position: 'absolute', top: '70%', left: '95%' }} />
-                                    </div>
-                                    <CircleGradient style={{ position: 'absolute', top: '10%', left: '105%' }} />
-                                </div>
-                            </div>
-                            <CircleGradient style={{ position: 'absolute', top: '10%', left: '105%' }} />
-                        </div>
-                        <CircleGradient style={{ position: 'absolute', top: '87%', left: '90%' }} />
-                    </div>
-                </div>
-
-            </div>
-
 
             <div className='relative'>
                 <PotraitGradient style={{ position: 'absolute', top: '50%', left: '22%', transform: ' translateX(-50%)' }} />
@@ -255,7 +129,7 @@ const Section_1 = () => {
                         {/* scanner end */}
 
 
-                        <div className='w-[480px] h-[101px] p-[20px] px-[24px] rounded-[72px] mb-[70px] bg-custom-gradient' >
+                        <div className='w-[480px] h-[101px] p-[20px] px-[24px] rounded-[72px] mb-[70px] bg-gradient-to-b from-[#201034] to-[#0A0312]' >
                             <p className="font-sora text-[14px] font-normal text-center text-[#FFFFFF80]">Name</p>
                             <p className='text-2xl font-normal text-center text-white'>solpump</p>
                         </div>
@@ -311,27 +185,7 @@ const Section_1 = () => {
 
 
 
-            <div className='w-full h-[715px] rounded-[40px] bg-[#0A0B0D] flex flex-col p-[30px_10px] overflow-hidden relative'>
-                <>
-                    <div className="w-fit h-[334px] m-auto flex flex-col relative z-[4]" >
-                        <p className='text-[88px]  leading-[114.4px] text-center'>ready when you are</p>
-                        <div className='w-fit m-auto'>
-                            <p className='text-[44px] leading-[44px]'>join community</p>
-                            <div className='flex justify-center mt-4'>
-                                <Arrow />
-                            </div>
-                        </div>
-                    </div>
 
-                    <div>
-                        <Footer />
-                    </div>
-                </>
-
-                <div className='w-full flex justify-center'>
-                    <FooterGradient />
-                </div>
-            </div>
         </div >
     )
 }
